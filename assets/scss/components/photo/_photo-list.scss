@@ -1,0 +1,12 @@
+.photo-list{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  &.half{
+    width: 50%;
+    height: 0;
+  }
+}

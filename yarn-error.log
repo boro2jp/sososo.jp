@@ -1,0 +1,40 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js add gulp
+
+PATH: 
+  /Users/soeji/miniconda3/bin:/Users/soeji/miniconda3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  18.9.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Applications/MAMP/htdocs/restaurant_01/wp-content/themes/restaurant_01/package.json: Unexpected token } in JSON at position 165
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "underscores",
+    "version": "1.0.0",
+    "description": "",
+    "author": "",
+    "license": "",
+    "devDependencies": {
+      "@wordpress/scripts": "^19.2.2",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

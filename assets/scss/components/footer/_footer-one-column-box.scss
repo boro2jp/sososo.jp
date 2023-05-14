@@ -1,0 +1,40 @@
+.footer-one-column-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    position: relative;
+    @media #{$TABLET}{
+        padding: 80px;
+    }
+    @media #{$PC}{
+        padding: 80px;
+    }
+
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        @media #{$TABLET}{
+            flex-direction: row;
+        }
+        @media #{$PC}{
+            flex-direction: row;
+        }
+    
+
+        img{
+            width: 150px;
+            height: auto;
+            margin: 0 5px;
+
+            @media #{$TABLET}{
+                width: 180px;
+            }
+            @media #{$PC}{
+                width: 180px;
+            }
+        }
+    }
+}

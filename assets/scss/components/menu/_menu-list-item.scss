@@ -1,0 +1,121 @@
+.menu-list-item {
+    @media #{$SP}{
+        width: 100%;
+        margin: 0 auto 32px auto;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    @media #{$TABLET}{
+        width: calc((100% / 2) - 10px);
+        margin-bottom: 32px;
+    }
+    @media #{$PC}{
+        width: calc((100% / 2) - 20px);
+        margin-bottom: 32px;
+    }
+
+    &:hover{
+        .menu-list-item__icon{
+            opacity: 1;
+        }
+    }
+
+    &.white{
+        .menu-list-item__title,
+        .menu-list-item__price,
+        .menu-list-item__soldout{
+            color: $color-white;
+        }
+    }
+
+    &__image{
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        padding-top: 100%;
+        background: #FAFAFA;
+        border-radius: $border-radius;
+        position: relative;
+        // &:after{
+        //     content: "";
+        //     display: block;
+        //     width: 100%;
+        //     height: 100%;
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     border: 6px solid $color-primary;
+        //     opacity: 0;
+        //     transition: $transition-slow;
+        // }
+    }
+
+    &__icon{
+        font-size: 30px;
+        color: $color-white;
+        text-align: center;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: $transition-slow;
+    }
+
+    &__text{
+        @media #{$SP}{
+            padding: 16px 4% 0 4%;
+        }
+        @media #{$TABLET}{
+            padding: 16px 0 0 0;
+        }
+        @media #{$PC}{
+            padding: 16px 0 0 0;
+        }
+    }
+
+    &__title{
+        @include text-title();
+        font-family: $font-primary;
+        font-weight: bold;
+        color: $color-white;
+        text-align: left;
+        display: block;
+    }
+
+    &__price{
+        @include text-title-small();
+        font-family: $font-primary;
+        margin-top: 4px;
+        color: $color-white;
+        text-align: left;
+        display: block;
+    }
+
+    &__copy{
+        @include text-title-small();
+        font-family: $font-primary;
+        margin-top: 4px;
+        color: $color-gray;
+        text-align: left;
+        display: block;
+    }
+
+    &__soldout{
+        font-size: 12px;
+        font-weight: bold;
+        color: $color-black;
+        text-align: left;
+        display: block;
+    }
+
+    &:hover{
+        // .menu-list-item__image{
+        //     &:after{
+        //         opacity: 1;
+        //     }
+        // }
+    }
+}

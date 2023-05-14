@@ -1,0 +1,23 @@
+// ページ全体（headerやfooterを除いた要素）
+.page{
+
+    &.top{
+      padding-top: 30px;
+      @media #{$TABLET}{
+        padding-top: 30px;
+      }
+      @media #{$PC}{
+        padding-top: 60px;
+      }
+    }
+  
+    &.bottom{
+      padding-bottom: 30px;
+      @media #{$TABLET}{
+        padding-bottom: 30px;
+      }
+      @media #{$PC}{
+        padding-bottom: 60px;
+      }
+    }
+  }

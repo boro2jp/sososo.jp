@@ -1,0 +1,133 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba($color-black, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: $transition-slow;
+  z-index: $z-index-header;
+  height: $height-header;
+
+  &.is-black{
+    height: $height-header-small;
+    top: 0px;
+    background-color: rgba($color-primary, 0.8);
+    &:before{
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      background: linear-gradient(103.64deg,rgba($color-primary2,.5) 5.41%,rgba($color-primary2,0) 68.05%);
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+
+  &__reserve{
+    margin-left: 30px;
+  
+  }
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu__left{
+  line-height: 1;
+}
+
+.header-menu__logo{
+  height: 20px;
+  width: auto;
+  @media #{$PC}{
+    height: 22px;
+  }
+  img{
+    height: 20px;
+    width: auto;
+    margin-bottom: 2px;
+    @media #{$PC}{
+      height: 20px;
+    }
+  }
+}
+
+.header-menu__right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.header-menu__lists {
+  display: none;
+  @media #{$PC}{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header-menu__list-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-left: 1px solid $color-gray-light;
+  &:last-child{
+    border-right: 1px solid $color-gray-light;
+  }
+
+  a{
+    padding: 0 20px;
+    font-size: 14px;
+    color: $color-white;
+  }
+  i{
+    margin-left: 5px;
+    font-size: 14px;
+    color: $color-white;
+    display: inline-block;
+  }
+}
+
+.header-menu__hamburger{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: 40px;
+  border: 1px solid $color-white;
+  border-radius: 10px;
+  padding: 10px 8px;
+  width: 38px;
+  height: 38px;
+
+  &.border-list{
+    .border-list-item{
+      width: 15px;
+      height: 1px;
+      background: $color-white;
+      margin-bottom: 4px;
+      display: block;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &:hover{
+    background: $color-white;
+    .border-list-item{
+      background: $color-primary;
+    }
+  }
+}

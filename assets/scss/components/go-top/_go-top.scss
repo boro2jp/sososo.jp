@@ -1,0 +1,22 @@
+.go-top{
+    border-top: 1px solid $color-border-line-black;
+    background: #080808;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: $transition-slow;
+    cursor: pointer;
+    &__icon {
+        color: $color-gray-light;
+        font-size: 16px;
+        margin-top: 2px;
+    }
+    &:hover{
+        border-top: 1px solid $color-border-line;
+        background: $color-white;
+        .go-top__icon {
+            color: $color-black;
+        }
+    }
+}

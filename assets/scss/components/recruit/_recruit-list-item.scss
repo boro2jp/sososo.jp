@@ -1,0 +1,48 @@
+.recruit-list-item {
+    width: 100%;
+    position: relative;
+    border: 1px solid $color-border-line;
+    margin-bottom: 20px;
+    padding: 20px 40px;
+
+    &:hover{
+        .news-list-item__created-at,
+        .news-list-item__title,
+        .news-list-item__arrow{
+            color: $color-primary;
+        }
+    }
+
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    &__text{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 12px 50px 12px 0;
+        flex-direction: column;
+    }
+
+    &__title{
+        color: $color-white;
+        display: block;
+        @include text-title-small();
+        transition: $transition-slow;
+        width: 100%;
+    }
+
+    &__arrow{
+        color: $color-gray;
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translate(0, -50%);
+    }
+}

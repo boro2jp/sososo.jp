@@ -1,0 +1,46 @@
+<?php
+/**
+ * The template for displaying the footer
+ */
+?>
+<?php get_template_part( 'template-parts/footer/footer-one-column-box'); ?>
+<!-- フッター -->
+<footer class="footer">
+    <div class="inner">
+        <div class="footer__top">
+            <div class="footer__sns sns-list">
+                <a class="sns-list-item" target="_blank" href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="sns-list-item" target="_blank" href="https://line.me/ja/">
+                    <i class="fa-brands fa-line"></i>
+                </a>
+                <a class="sns-list-item" target="_blank" href="https://twitter.com/">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a class="sns-list-item" target="_blank" href="https://facebook.com/">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </div>
+            <nav class="footer__menu-lists" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <li class="footer__menu-list-item"><a href="<?php echo home_url('blog'); ?>">記事一覧</a></li>
+                <li class="footer__menu-list-item"><a href="<?php echo home_url('news'); ?>">お知らせ</a></li>
+                <li class="footer__menu-list-item"><a href="<?php echo home_url('staff'); ?>">メンバー</a></li>
+                <li class="footer__menu-list-item"><a href="<?php echo home_url('policy'); ?>">利用規約</a></li>
+                <li class="footer__menu-list-item"><a href="<?php echo home_url('privacy-policy'); ?>">プライバシーポリシー</a></li>
+            </nav>
+        </div>
+    </div>
+    <div class="footer__copyright inner">Copyright 2022(C) <?php echo bloginfo('name'); ?> All Rights Reserved.</div>
+    <?php include("template-parts/demo.php") ?>
+</footer>
+<!-- トップへ -->
+<?php get_template_part( 'template-parts/go-top/go-top'); ?>
+</div><!-- #page -->
+<script defer src="https://kit.fontawesome.com/1412b0d71c.js" crossorigin="anonymous"></script>
+<script defer type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script defer type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/slick/slick.min.js"></script>
+<script defer type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/script.js"></script>
+<?php wp_footer(); ?>
+</body>
+</html>

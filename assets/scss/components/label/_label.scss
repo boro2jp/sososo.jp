@@ -1,0 +1,65 @@
+.label{
+  display: inline-block;
+  line-height: 1;
+  letter-spacing: -1px;
+  transition: $transition-fast;
+  font-weight: bold;
+  position: relative;
+  border-radius: 100px;
+
+  &.fix{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+
+  &.small{
+    @include text-small-label();
+    padding: 8px 16px 8px 16px;
+  }
+
+  &.medium{
+    @include text-small-label();
+    padding: 10px 16px 10px 16px;
+  }
+
+  &.border{
+    color: $color-black;
+    border: 1px solid $color-black;
+    
+    &.hover{
+      &:hover{
+        color: $color-black;
+        background: $color-black;
+      }
+    }
+  }
+
+  &.red{
+    color: $color-white;
+    background: $color-error;
+    border: 1px solid $color-error;
+  }
+
+
+  &.white-border{
+    color: $color-white;
+    border: 1px solid $color-white;
+  }
+
+  &.white{
+    color: $color-black;
+    background: rgba($color-white, 1);
+  }
+
+  &.primary{
+    color: $color-white;
+    background: $color-primary;
+    border: 1px solid $color-primary;
+  }
+
+  &.black{
+    color: $color-white;
+    background: rgba($color-black, 0.9);
+  }
+}

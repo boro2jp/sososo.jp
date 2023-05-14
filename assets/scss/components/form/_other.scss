@@ -1,0 +1,18 @@
+.form-description{
+    @include text-body();
+    margin-bottom: 40px;
+    background: $color-gray-light;
+    border-radius: $border-radius;
+    padding: 20px 30px;
+}
+
+.form-section{
+    &.bottm{
+        margin-bottom: 60px;
+    }
+
+    &__title{
+        @include text-title();
+        margin-bottom: 20px;
+    }
+}

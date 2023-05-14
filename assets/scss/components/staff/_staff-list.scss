@@ -1,0 +1,16 @@
+.staff-list{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    @media #{$TABLET}{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    @media #{$PC}{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}

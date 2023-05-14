@@ -1,0 +1,75 @@
+.date-tags,
+.sns-share,
+.sns-follow,
+.footer-meta {display: none !important}
+
+/* 必須 */
+.require {
+  font-size: .7em;
+  background: $color-error;
+  padding: 12px 20px;
+  color: #fff;
+  margin-left: 5px;
+}
+
+
+/* エラー */
+
+.mw_wp_form .error {
+  background: $color-error-light;
+  padding: 12px 20px;
+  margin-bottom: 16px;
+  display: block;
+  flex: 0 1 100%;
+  border-radius: $border-radius;
+}
+
+.error-notice {
+  color: $color-error;;
+  background: $color-error-light;
+  padding: 14px;
+  text-align: center;
+}
+
+.error-notice a {
+  display: block;
+  font-size: 0.8em;
+}
+
+/* レイアウト */
+.enquete_area { padding: 20px; border:1px solid #ccc;}
+.enquete_area  .lead p { font-size: 0.9em; line-height: 1.6;}
+.enquete_area  .q {background: #eaeaea;padding: 10px;}
+.enquete_area  .barth_area { display: flex; align-items: center; margin-bottom: 30px}
+.enquete_area  .barth_area  .yarea { flex: 0 0 30%; margin-right: 5px;}
+.enquete_area  .barth_area  .marea,
+.enquete_area  .barth_area  .darea { flex: 0 0 24%; margin-right: 5px; margin-left: 5px;}
+
+/* 送信ボタン */
+.enquete_area input[type='submit'] {
+  max-width: 320px;
+  display: block;
+  margin: 0 auto;
+  background: $color-warning !important;
+  color: #fff;
+  font-size: 1em;
+}
+
+.enquete_area button[type='submit'].back {
+  background: none;
+  border: none;
+  color: #000;
+  font-family: 'Noto Sans JP';
+  color: blue;
+  text-decoration: underline;
+  font-size: 1em;
+}
+
+.horizontal-item {
+  padding-bottom: 10px;
+  display: block;
+}
+
+.mw_wp_form .horizontal-item + .horizontal-item{
+  margin-left: 0 !important;
+}

@@ -1,0 +1,14 @@
+.sidebar-list-item{
+  margin-bottom: 30px;
+
+  &:first-child{
+    padding-top: 0;
+  }
+
+  &__title{
+    @include text-title();
+    color: $color-black;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}

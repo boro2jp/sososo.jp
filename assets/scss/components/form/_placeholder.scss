@@ -1,0 +1,10 @@
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: $color-placeholder-text;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $color-placeholder-text;
+}
+::placeholder{ /* Others */
+    color: $color-placeholder-text;
+}

@@ -1,0 +1,138 @@
+
+.btn{
+  background: $color-black;
+  color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+  transition: $transition-slow;
+  line-height: 1;
+  letter-spacing: 2px;
+  border-radius: $border-radius;
+  @include text-title-small();
+  @media #{$SP}{
+    width: 100%;
+    padding: 20px 40px;
+  }
+  @media #{$TABLET}{
+    padding: 20px 80px;
+  }
+  @media #{$PC}{
+    padding: 16px 80px;
+  }
+
+  &.radius{
+    border-radius: 5px;
+  }
+
+  &.small{
+    @media #{$SP}{
+      padding: 18px 36px;
+    }
+    @media #{$TABLET}{
+      padding: 18px 36px;
+    }
+    @media #{$PC}{
+      padding: 12px 32px;
+    }
+  }
+
+  &.block{
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  &.primary{
+    background: $color-primary;
+    color: $color-white;
+    border: 1px solid $color-primary;
+    &:hover{
+      cursor: pointer;
+      color: $color-primary;
+      background: $color-white;
+    }
+  }
+
+  &.primary-border{
+    border: 1px solid $color-primary;
+    background: transparent;
+    color: $color-primary;
+    &:hover{
+      cursor: pointer;
+      background: $color-primary;
+      color: $color-white;
+    }
+  }
+
+  &.black{
+    background: $color-black;
+    color: $color-white;
+    border: 1px solid $color-black;
+    &:hover{
+      cursor: pointer;
+      background: transparent;
+      color: $color-black;
+    }
+  }
+
+  &.black-border{
+    border: 1px solid $color-black;
+    background: transparent;
+    color: $color-black;
+    &:hover{
+      cursor: pointer;
+      background: $color-black;
+      color: $color-white;
+    }
+  }
+
+  &.white{
+    border: 1px solid $color-white;
+    background: $color-white;
+    color: $color-black;
+    &:hover{
+      cursor: pointer;
+      color: $color-white;
+      background: transparent;
+    }
+  }
+
+  &.white-border{
+    border: 1px solid $color-white;
+    background: transparent;
+    color: $color-white;
+    &:hover{
+      cursor: pointer;
+      background: $color-white;
+      color: $color-black;
+    }
+  }
+
+  &.disable{
+    background: $color-gray;
+    cursor: no-drop;
+  }
+}
+
+.btn-area{
+  width: 100%;
+  padding-top: 40px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+
+  &.left{
+    justify-content: flex-start;
+  }
+
+  &.right{
+    justify-content: flex-end;
+  }
+
+  .harf{
+    width: calc((100% / 2) - 20px);
+  }
+}

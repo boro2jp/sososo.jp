@@ -1,0 +1,13 @@
+.menu-list{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &:after{
+        content: "";
+        display: block;
+        width: calc((100% / 3) - 10px);
+    }
+}

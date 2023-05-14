@@ -1,0 +1,31 @@
+.top-key-visual{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* can either be relative, absolute or fixed. If position is not set (i.e. static), it would be set to "relative" by script */
+  overflow: hidden; /* to bound the empty top space created by inner element's top margin */
+  width: 100%;
+  height: 100vh;
+  min-height: 400px;
+  background-color: $color-black;
+  z-index: 0;
+  &__logo{
+    width: 80%;
+    height: auto;
+    opacity: 1;
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+
+    @media #{$TABLET}{
+      width: 500px;
+      heigth: 117px;
+    }
+    @media #{$PC}{
+      width: 800px;
+      heigth: 188px;
+    }
+  }
+}

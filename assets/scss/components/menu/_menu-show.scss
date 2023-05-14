@@ -1,0 +1,234 @@
+.product-show{
+    width: 100%;
+
+    &__content{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        @media #{$TABLET}{
+            flex-direction: row;
+        }
+        @media #{$PC}{
+            flex-direction: row;
+        }
+    }
+
+
+
+    $sp-image-width: 100%;
+    $tablet-image-width: 400px;
+    $pc-image-width: 600px;
+    $sp-large-image-width: 100%;
+    $pc-large-image-width: 500px;
+    $sp-small-image-width: 100%;
+    $pc-small-image-width: 500px;
+
+    &__image{
+        display: flex;
+        flex-direction: column;
+        width: $sp-image-width;
+        @media #{$TABLET}{
+            width: $tablet-image-width;
+        }
+        @media #{$PC}{
+            width: $pc-image-width;
+        }
+    }
+
+    &__large-image{
+        width: 100%;
+        height: 0;
+        padding-top: 100%;
+        background: #FAFAFA;
+        border-radius: $border-radius;
+        margin: 5px;
+        position: relative;
+        @media #{$TABLET}{
+            width: $tablet-image-width;
+        }
+        @media #{$PC}{
+            width: $pc-image-width;
+        }
+    }
+
+    &__large-image-caption{
+        background: rgba($color-white, 0.8);
+        font-size: 10px;
+        height: 26px;
+        width: 100%;
+        color: $color-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__small-image{
+        width: 80px;
+        height: auto;
+        margin: 5px;
+        border: 3px solid $color-white;
+        cursor: pointer;
+
+        &.slick-current{
+            border: 3px solid $color-primary;
+        }
+    }
+
+    &__detail{
+        @media #{$SP}{
+            padding-top: 20px;
+            width: 100%;
+        }
+        @media #{$TABLET}{
+            margin-left: 80px;
+            width: calc(100% - (#{$pc-image-width} - 80px));
+        }
+        @media #{$PC}{
+            margin-left: 80px;
+            width: calc(100% - (#{$pc-image-width} - 80px));
+        }
+    }
+
+    &__text{
+        margin-bottom: 30px;
+    }
+
+    &__base-info{
+        padding-bottom: 10px;
+    }
+
+    &__title{
+        @include text-title-large();
+        color: $color-white;
+        font-family: $font-primary;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    &__concept{
+        @include text-title-small();
+        color: $color-white;
+        font-weight: bold;
+    }
+
+    &__category{
+        @include text-title-small();
+        color: $color-white;
+        margin-bottom: 6px;
+    }
+
+    &__price{
+        @include text-title-large();
+        color: $color-white;
+        color: $color-primary;
+    }
+
+    &__price-unit{
+        font-size: 12px;
+    }
+
+    &__quantity{
+        margin-bottom: 16px;
+        font-size: 14px;
+        color: $color-white;
+    }
+
+    &_variant-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__btn{
+        width: 100%;
+        max-width: 100%;
+        cursor: pointer;
+    }
+
+    &__caption{
+        @include text-body-small();
+        margin-top: 10px;
+    }
+
+    &__section{
+        margin-bottom: 30px;
+    }
+
+    &__section-title{
+        @include text-title-small();
+        color: $color-white;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    &__description{
+        @include text-body-small();
+    }
+}
+
+
+.variant-list{
+    border: 1px solid $color-border-line;
+}
+
+.variant-list-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 20px 12px 20px;
+    border-bottom: 1px solid $color-border-line;
+    background: $color-gray-light;
+    @media #{$TABLET}{
+        padding: 16px 24px 16px 24px;
+    }
+    @media #{$PC}{
+        padding: 16px 24px 16px 24px;
+    }
+
+    &:last-child{
+        border-bottom: 0;
+    }
+
+    &__title{
+        @include text-title-small();
+        font-weight: bold;
+    }
+
+    &__btn{
+        margin-left: 20px;
+    }
+}
+
+
+.product-about-list-item{
+    margin-bottom: 10px;
+    border: 1px solid $color-border-line;
+
+    &__title{
+        @include text-title-small();
+        background: $color-gray-light;
+        border-bottom: 1px solid $color-border-line;
+        padding: 10px 16px;
+        @media #{$TABLET}{
+            padding: 10px 20px;
+        }
+        @media #{$PC}{
+            padding: 10px 20px;
+        }
+    }
+
+    &__body{
+        @include text-body-small();
+        padding: 12px 16px;
+        @media #{$TABLET}{
+            padding: 16px 20px;
+        }
+        @media #{$PC}{
+            padding: 16px 20px;
+        }
+    }
+}

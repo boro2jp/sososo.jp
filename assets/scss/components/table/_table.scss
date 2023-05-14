@@ -1,0 +1,73 @@
+.table{
+  color: $color-white;
+  width: 100%;
+
+  tr{
+    border-bottom: 1px solid $color-border-line;
+    &:first-child{
+      border-top: 1px solid $color-border-line;
+    }
+    @media #{$SP}{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+  th {
+    padding: 24px 0 0 0;
+    @media #{$TABLET-OVER}{
+      padding: 24px 0;
+    }
+  }
+  td {
+    padding: 10px 0 24px 0;
+    @media #{$TABLET-OVER}{
+      padding: 24px 0;
+    }
+  }
+
+  table {
+    border-collapse:  collapse; /* セルの線を重ねる */
+    width:  100%;               /* 幅指定 */
+  }
+
+  th {
+    width:  150px;              /* 幅指定 */
+    text-align: left;           /* 文字の揃え位置指定 */
+    vertical-align: middle;
+    @media #{$TABLET-OVER}{
+      width:  200px;
+    }
+  }
+
+  td {
+    text-align:  left;        /* 文字の揃え位置指定 */
+    color: $color-gray;
+  }
+}
+
+
+.policy-area{
+  padding: 30px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: $color-white;
+
+  &__checkbox{
+    padding: 20px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+
+.mw_wp_form_confirm,
+.mw_wp_form_complete{
+  .policy-area{
+    display: none;
+  }
+}
