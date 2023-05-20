@@ -92,6 +92,7 @@
     }
 
     &__content{
+        @include text-body();
         @media #{$SP}{
             padding: 20px 0;
         }

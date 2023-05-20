@@ -24,10 +24,10 @@ gulp.task("js", function() {
         './assets/js/main/main.js'
     ])
       .pipe(concat('script.js'))
-      .pipe(plumber())
-      .pipe(uglify({
-        preserveComments: 'some'
-      }))
+    //   .pipe(plumber())
+    //   .pipe(uglify({
+    //     preserveComments: 'some'
+    //   }))
       .pipe(gulp.dest('./'));
   });
 

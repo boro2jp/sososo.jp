@@ -1,6 +1,11 @@
+html {
+  font-size: $font-size-root;
+}
+
 body{
   font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   background: $color-gray-light;
+  font-size: $font-size-base;
 }
 
 #body{
@@ -31,4 +36,16 @@ body{
 
 .top-navigation{
   margin-bottom: 20px;
+}
+
+.hidden-sp{
+  @media #{$SP}{
+    display: none;
+  }
+}
+
+.hidden-pc{
+  @media #{$PC}{
+    display: none;
+  }
 }

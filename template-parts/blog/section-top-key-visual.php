@@ -22,15 +22,10 @@ $query = [
         <div class="section-top-key-visual__content">
             <div class="section-top-key-visual__text">
                 <p class="section-top-key-visual__title">
-                    漫画制作<br>
-                    情報を<br>
-                    全てここに。
+                    漫画制作に<br class="hidden-pc">役立つ情報集めます。
                 </p>
                 <p class="section-top-key-visual__body">
-                    ソロだからこその魅力がそこにある。
-                    「SOLOCAM（ソロキャン）」では日常生活の心の癒しを目指し、
-                    手軽にキャンプを楽しむための
-                    情報をお届けします！
+                    想像、創造、妄想を形に。<br class="hidden-pc">ソソソは、漫画制作に役立つ情報をお届けします！
                 </p>
             </div>
             <div class="section-top-key-visual__slider-wrapper">

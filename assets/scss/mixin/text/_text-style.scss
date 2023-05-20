@@ -1,36 +1,15 @@
-// タイトル_複数行_黒（特大）
-@mixin text-title-x-large(){
-  font-size: 40px;
-  line-height: 1.6;
-  color: $color-black;
-  text-align: left;
-  word-break: break-all;
-  @media #{$TABLET}{
-    font-size: 50px;
-  }
-  @media #{$PC}{
-    font-size: 50px;
-  }
-}
-
 // タイトル_複数行_黒（大）
 @mixin text-title-large(){
-  font-size: 20px;
+  font-size: $font-size-h1;
   line-height: 1.6;
   color: $color-black;
   text-align: left;
   word-break: break-all;
-  @media #{$TABLET}{
-    font-size: 24px;
-  }
-  @media #{$PC}{
-    font-size: 24px;
-  }
 }
 
 // タイトル_複数行_黒（中）
 @mixin text-title(){
-  font-size: 14px;
+  font-size: $font-size-h2;
   line-height: 1.6;
   color: $color-black;
   text-align: left;
@@ -45,17 +24,11 @@
 
 // タイトル_複数行_黒（小）
 @mixin text-title-small(){
-  font-size: 12px;
+  font-size: $font-size-h3;
   line-height: 1.6;
   color: $color-black;
   text-align: left;
   word-break: break-all;
-  @media #{$TABLET}{
-    font-size: 14px;
-  }
-  @media #{$PC}{
-    font-size: 14px;
-  }
 }
 
 // 本文_複数行_黒（大）
@@ -77,38 +50,13 @@
   }
 }
 
-// 本文_複数行_黒（大）
-@mixin text-body-large(){
-  font-size: 14px;
-  line-height: 2;
-  color: $color-black;
-  text-align: left;
-  word-break: break-all;
-  @media #{$TABLET}{
-    font-size: 16px;
-  }
-  @media #{$PC}{
-    font-size: 18px;
-  }
-
-  &.is-white{
-    color: $color-black;
-  }
-}
-
 // 本文_複数行_黒（中）
 @mixin text-body(){
-  font-size: 13px;
+  font-size: $font-size-base;
   line-height: 2;
   color: $color-black;
   text-align: left;
   word-break: break-all;
-  @media #{$TABLET}{
-    font-size: 14px;
-  }
-  @media #{$PC}{
-    font-size: 14px;
-  }
 
   &.is-white{
     color: $color-black;

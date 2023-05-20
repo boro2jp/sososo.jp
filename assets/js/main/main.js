@@ -1,23 +1,15 @@
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 5) {
-        $('#header').addClass('is-black');
-    } else {
-        $('#header').removeClass('is-black');
-    }
-});
-
 
 $('#blog-pickup-list').slick({
     dots: true,
     arrows: true,
     centerMode: false,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     // swipe: true,
     // speed: 100,
     centerPadding: '0',
-    speed: 3000,
+    speed: 500,
     lazyLoad: 'progressive',
     // variableWidth: true,
     cssEase: "ease-out",
@@ -32,7 +24,7 @@ $('#blog-pickup-list').slick({
             breakpoint: 1500,
             settings:{
                 initialSlide: 0,
-                slidesToShow: 2,
+                slidesToShow: 4,
                 slidesToScroll: 1
             }
         },
@@ -212,10 +204,6 @@ $('#grayscale, #sp-menu-close').on('click', function(){
     $('#sp-menu').removeClass('active');
     $('#sp-menu-close').removeClass('active');
     $('#grayscale').removeClass('active');
-});
-
-$(window).on('load', function(){
-    $('#loading').delay(900).removeClass('active');
 });
 
 $(function(){

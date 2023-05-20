@@ -66,7 +66,6 @@
   line-height: 2;
   color: $color-black;
   z-index: 1;
-  @include text-body-large();
 
   p{
     text-align: center;

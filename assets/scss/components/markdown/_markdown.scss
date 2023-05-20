@@ -76,12 +76,13 @@
 
   // ヘッディング
   h1,h2,h3,h4,h5,h6{
-    @include text-title();
+    @include text-body();
     background: rgba($color-gray-light, 1);
     padding: 16px 32px 16px 32px;
     margin: 40px 0 16px 0;
     color: $color-black;
     border-radius: 5px;
+    font-weight: bold;
   }
 
   // 画像
