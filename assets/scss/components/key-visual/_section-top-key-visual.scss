@@ -9,7 +9,7 @@
   overflow: hidden;
   background-color: $color-primary;
   height: auto;
-  background: url('./assets/webp/background/bg.webp');
+  background: linear-gradient(103.64deg,rgba($color-primary2,.8) 5.41%,rgba($color-primary,0.8) 68.05%), url('./assets/webp/background/bg.webp');
   background-position: center;
   background-size: cover;
 
@@ -22,17 +22,6 @@
   @media #{$PC}{
     padding: calc(10px + #{$height-header}) 0 40px 0;
     min-height: 500px;
-  }
-
-  &:before{
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: '';
-    background: linear-gradient(103.64deg,rgba($color-primary2,.8) 5.41%,rgba($color-primary,0.8) 68.05%);
-    width: 100%;
-    height: 100%;
-    z-index: -1;
   }
   &__logo{
     width: 80%;

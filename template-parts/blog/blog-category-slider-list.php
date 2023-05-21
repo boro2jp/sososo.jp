@@ -1,6 +1,6 @@
 <?php $the_query = new WP_Query( $args['query'] ); ?>
 <?php if ( $the_query->have_posts() ) : ?>
-<div class="blog-category-list" id="<?php echo $args['id'] ?>">
+<div class="blog-horizontal-list" id="<?php echo $args['id'] ?>">
 	<?php
 		while ( $the_query->have_posts() ) :
 			$the_query->the_post();

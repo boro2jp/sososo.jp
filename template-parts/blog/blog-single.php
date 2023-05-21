@@ -7,12 +7,12 @@
                     <?php get_template_part( 'template-parts/article/article-content', get_post_type()); ?>
                 </section>
                 <!-- この記事を書いた人 -->
-                <section class="section bottom">
+                <!-- <section class="section bottom">
                     <?php get_template_part( 'template-parts/section-header/section-header', null, ['title' =>  'この記事を書いた人']); ?>
                     <ul class="staff-list">
                         <?php get_template_part( 'template-parts/staff/staff-list-item', null, ['staff' => get_userdata($post->post_author), 'btn' => true]); ?>
                     </ul>
-                </section>
+                </section> -->
                 <!-- おすすめ記事 -->
                 <section class="section bottom">
                     <?php if ('blog' === get_post_type() ) : ?>

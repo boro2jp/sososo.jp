@@ -1,16 +1,16 @@
-<div class="blog-list">
+<div class="blog-list-harf">
     <?php
     $the_query = new WP_Query( $args['query'] ); ?>
     <?php
     if ( $the_query->have_posts() ) :
         while ( $the_query->have_posts() ) :
 	        $the_query->the_post();
-            get_template_part( 'template-parts/blog/blog-list-item', null, ['size' => 'harf']);
+            get_template_part( 'template-parts/blog/blog-list-item-harf', null);
         endwhile;
 		if ( $args['query']['paged'] ) :
 			$GLOBALS['wp_query']->max_num_pages = $the_query->max_num_pages;
 			the_posts_pagination([
-				'mid_size' => 3,
+				'mid_size' => 4,
 				'prev_text' => '前へ',
 				'next_text' => '次へ',
 				'screen_reader_text' => ' '

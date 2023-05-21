@@ -19,7 +19,8 @@ get_header();
                 get_template_part( 'template-parts/blog/blog-page', null, ['query' => $query, 'title' => single_cat_title( '', false ), 'btn' => true]);
             ?>
         </section>
-        <?php get_template_part( 'template-parts/blog/section-top-blog-category', null); ?>
+        <?php get_template_part( 'template-parts/blog/section-top-blog-pickup', null); ?>
+        <?php get_template_part( 'template-parts/blog/section-top-blog-category-list', null); ?>
     </main>
 </div>
 <?php

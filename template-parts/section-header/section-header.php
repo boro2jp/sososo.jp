@@ -1,4 +1,4 @@
-<div class="section-header bottom">
+<div class="section-header <?php echo $args['color'] ?> bottom">
     <div class="section-header__left">
         <i class="section-header__icon fa-sharp fa-solid fa-hand-point-up"></i>
         <h2 class="section-header__title"><?php echo $args['title'] ?></h2>

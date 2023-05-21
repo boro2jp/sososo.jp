@@ -25,6 +25,20 @@
       }
     }
 
+    // 余白（下側）
+    &.bottom-margin{
+      @media #{$SP}{
+        margin-bottom: 60px;
+      }
+      @media #{$TABLET}{
+        margin-bottom: 60px;
+      }
+      @media #{$PC}{
+        margin-bottom: 60px;
+      }
+    }
+
+        
     // 背景色
     &.white{
       background: $color-white;

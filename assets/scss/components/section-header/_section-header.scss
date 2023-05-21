@@ -6,7 +6,7 @@
     z-index: 1;
   
     &.white{
-      .section-eg,
+      .section-header__title,
       .section-title,
       .section-body{
         color: $color-white;
@@ -35,6 +35,7 @@
       @include text-title-large();
       color: $color-primary;
       margin-right: 10px;
+      z-index: 1;
     }
   
     &__title {

@@ -25,8 +25,9 @@ $query = [
     ]
 ];
 ?>
-<section class="section-top-category-blog section bottom">
-<?php get_template_part( 'template-parts/blog/section-top-blog-introduction', null); ?>
-<?php get_template_part( 'template-parts/blog/section-top-blog-cooking', null); ?>
-<?php get_template_part( 'template-parts/blog/section-top-blog-goods', null); ?>
+<section class="section bottom section-top-blog-category-list">
+    <div class="inner">
+        <?php get_template_part( 'template-parts/section-header/section-header', null, ['title' => $args['category_name'], 'link' => home_url() . '/blog/category/introduction']); ?>
+        <?php get_template_part( 'template-parts/blog/blog-list-harf', null, ['query' => $query, 'id' => 'blog-category-introduction-list']); ?>
+    </div>
 </section>
