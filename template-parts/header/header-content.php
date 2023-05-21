@@ -21,6 +21,7 @@ $tags = get_terms('blog_tag', $args);
     <div class="header-menu__right">
         <nav class="" role="navigation">
             <ul class="header-menu__lists">
+                <li class="header-menu__list-item"><a href="<?php echo home_url('about'); ?>">ソソソ.jpとは</a></li>
                 <?php
                     foreach ($categories as $category) {
                         echo '<li class="header-menu__list-item"><a href="' . get_term_link($category->term_id, 'blog_category') . '">' . $category->name . '</a></li>';
