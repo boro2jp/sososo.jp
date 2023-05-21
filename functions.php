@@ -614,3 +614,32 @@ function cpt_pre_get_posts($query) {
 	}
   }
   add_action('pre_get_posts', 'cpt_pre_get_posts');
+
+
+  function kaiza_filter_rest_endpoints( $endpoints ) {
+    /* REST APIで投稿一覧取得を無効にする */
+    if ( isset( $endpoints['/wp/v2/posts'] ) ) {
+        unset( $endpoints['/wp/v2/posts'] );
+    }
+    /* REST APIで投稿記事取得（単記事）を無効にする */
+    if ( isset( $endpoints['/wp/v2/posts/(?P<id>[\d]+)'] ) ) {
+        unset( $endpoints['/wp/v2/posts/(?P<id>[\d]+)'] );
+    }
+    /* REST APIでページ一覧取得を無効にする */
+    if (isset($endpoints['/wp/v2/pages'])) {
+      unset($endpoints['/wp/v2/pages']);
+    }
+    /* REST APIでページ取得（単記事）を無効にする */
+    if (isset($endpoints['/wp/v2/pages/(?P<id>[\d]+)'])) {
+      unset($endpoints['/wp/v2/pages/(?P<id>[\d]+)']);
+    }
+    /* REST APIでユーザー情報取得を無効にする */
+    if ( isset( $endpoints['/wp/v2/users'] ) ) {
+        unset( $endpoints['/wp/v2/users'] );
+    }
+    if ( isset( $endpoints['/wp/v2/users/(?P<id>[\d]+)'] ) ) {
+        unset( $endpoints['/wp/v2/users/(?P<id>[\d]+)'] );
+    }
+    return $endpoints;
+}
+add_filter( 'rest_endpoints', 'kaiza_filter_rest_endpoints', 10, 1 );
