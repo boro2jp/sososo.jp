@@ -14,9 +14,9 @@
         </div>
         <?php endif; ?>
         <div class="blog-list-item-harf__text">
-            <h3 class="blog-list-item-harf__title">
+            <p class="blog-list-item-harf__title">
                 <?php the_title(); ?>
-            </h3>
+            </p>
             <div class="blog-list-item-harf__detail">
                 <ul class="tag-list">
 		            <?php

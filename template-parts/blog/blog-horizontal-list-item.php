@@ -47,9 +47,9 @@
                        <?php echo get_the_modified_date('Y.m.d'); ?>
                 </span>
             </div>
-            <h3 class="blog-horizontal-list-item__title">
+            <p class="blog-horizontal-list-item__title">
                 <?php the_title(); ?>
-            </h3>
+            </p>
     
         </div>
     </a>
