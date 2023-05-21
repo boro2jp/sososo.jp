@@ -32,7 +32,6 @@
         </div>
     </div>
     <div class="footer__copyright inner">Copyright 2022(C) <?php echo bloginfo('name'); ?> All Rights Reserved.</div>
-    <?php include("template-parts/demo.php") ?>
 </footer>
 <!-- トップへ -->
 <?php get_template_part( 'template-parts/go-top/go-top'); ?>
