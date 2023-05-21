@@ -1,4 +1,3 @@
-<!-- 私達について -->
 <?php
 get_header();
 $category = get_queried_object(); // 現在のカテゴリを取得
@@ -21,9 +20,9 @@ $query = [
     <div class="inner">
         <div class="section-top-key-visual__content">
             <div class="section-top-key-visual__text">
-                <p class="section-top-key-visual__title">
+                <h2 class="section-top-key-visual__title">
                     漫画制作に<br class="hidden-pc">役立つ情報集めます。
-                </p>
+                </h2>
                 <p class="section-top-key-visual__body">
                     想像、創造、妄想を形に。<br class="hidden-pc">ソソソは、漫画制作に役立つ情報をお届けします！
                 </p>
