@@ -24,9 +24,9 @@
         </div>
         <?php endif; ?>
         <div class="blog-small-list-item__text">
-            <h3 class="blog-small-list-item__title">
+            <p class="blog-small-list-item__title">
                 <?php the_title(); ?>
-            </h3>
+            </p>
             <div class="blog-small-list-item__detail">
                 <span class="blog-small-list-item__created-at">
                        <?php echo get_the_modified_date('Y.m.d'); ?>
