@@ -14,6 +14,7 @@ if (is_single()){//単一記事ページの場合
 }
 $str = $post->post_content;
 $searchPattern = '/<img.*?src=(["\'])(.+?)\1.*?>/i';//投稿にイメージがあるか調べる
+$ogp_image = get_template_directory_uri().'/assets/images/ogp/ogp.jpg';
 if (is_single()){//単一記事ページの場合
 	if (has_post_thumbnail()){//投稿にサムネイルがある場合の処理
 		$image_id = get_post_thumbnail_id();
@@ -22,14 +23,13 @@ if (is_single()){//単一記事ページの場合
 	} else if ( preg_match( $searchPattern, $str, $imgurl ) && !is_archive()) {//投稿にサムネイルは無いが画像がある場合の処理
 		echo '<meta property="og:image" content="'.$imgurl[2].'">';echo "\n";
 	} else {//投稿にサムネイルも画像も無い場合の処理
-		$ogp_image = get_template_directory_uri().'/assets/images/ogp.jpg';
 		echo '<meta property="og:image" content="'.$ogp_image.'">';echo "\n";
 	}
 } else {//単一記事ページページ以外の場合（アーカイブページやホームなど）
 	if (get_header_image()){//ヘッダーイメージがある場合は、ヘッダーイメージを
 		echo '<meta property="og:image" content="'.get_header_image().'">';echo "\n";
 	} else {//ヘッダーイメージがない場合は、テーマのスクリーンショット
-		echo '<meta property="og:image" content="'.get_template_directory_uri().'/screenshot.png">';echo "\n";
+		echo '<meta property="og:image" content="'.$ogp_image.'">';echo "\n";
 	}
 }
 ?>
