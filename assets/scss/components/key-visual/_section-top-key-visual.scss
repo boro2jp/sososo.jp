@@ -9,10 +9,9 @@
   overflow: hidden;
   background-color: $color-primary;
   height: auto;
-  background: url('./assets/webp/kv@2x.webp');
+  background: url('./assets/webp/background/bg.webp');
   background-position: center;
   background-size: cover;
-  // background: linear-gradient(103.64deg,rgba($color-primary2,.5) 5.41%,rgba($color-primary2,0) 68.05%);
 
   @media #{$SP}{
     padding: $height-header 0 40px 0;

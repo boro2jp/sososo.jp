@@ -3,9 +3,9 @@ html {
 }
 
 body{
+  font-size: $font-size-base;
   font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   background: $color-gray-light;
-  font-size: $font-size-base;
 }
 
 #body{
