@@ -3,7 +3,6 @@
  * The template for displaying the footer
  */
 ?>
-<?php get_template_part( 'template-parts/footer/footer-one-column-box'); ?>
 <!-- フッター -->
 <footer class="footer">
     <div class="inner">

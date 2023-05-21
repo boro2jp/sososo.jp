@@ -32,12 +32,12 @@ $tags = get_terms('blog_tag', $args);
         <section class="sp-menu-section-list">
             <!-- キーワードから探す -->
             <section class="sp-menu-section-list-item">
-                <h2 class="sp-menu-section-list__title">キーワードから探す</h2>
+                <p class="sp-menu-section-list__title">キーワードから探す</p>
                 <?php get_search_form(); ?>
             </section>
             <!-- カテゴリから探す -->
             <section class="sp-menu-section-list-item">
-                <h2 class="sp-menu-section-list__title">カテゴリから探す</h2>
+                <p class="sp-menu-section-list__title">カテゴリから探す</p>
                 <ul class="sp-menu-list">
                     <?php
                     foreach ($categories as $category) {
@@ -49,7 +49,7 @@ $tags = get_terms('blog_tag', $args);
             <!-- タグから探す -->
             <section class="sp-menu-section-list-item">
                 <?php if(!empty($tags)): ?>
-                <h2 class="sp-menu-section-list__title">タグから探す</h2>
+                <p class="sp-menu-section-list__title">タグから探す</p>
                 <ul class="tag-list">
                     <li class="tag-list-item white-border small margin"><a href="<?php echo home_url('blog'); ?>">全て</a></li>
                     <?php
