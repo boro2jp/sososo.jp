@@ -38,7 +38,7 @@
 <script defer src="https://kit.fontawesome.com/1412b0d71c.js" crossorigin="anonymous"></script>
 <script defer type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script defer type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/slick/slick.min.js"></script>
-<script defer type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/script.js"></script>
+<script defer type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/dist/js/script.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>

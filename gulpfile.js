@@ -14,7 +14,7 @@ gulp.task('sass', () => {
         .pipe(sass({outputStyle: 'expanded'}))
         .pipe(autoprefixer())
         .pipe(cleancss())   
-        .pipe(gulp.dest('./'));
+        .pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task("js", function() {
@@ -28,7 +28,7 @@ gulp.task("js", function() {
     //   .pipe(uglify({
     //     preserveComments: 'some'
     //   }))
-      .pipe(gulp.dest('./'));
+      .pipe(gulp.dest('./dist/js'));
   });
 
 gulp.task('image', () => {
@@ -38,7 +38,7 @@ return gulp.src('./assets/images/**/*.{jpg,jpeg,png}')
         quality: 100,
         method: 6,
     }))
-    .pipe(gulp.dest('./assets/webp'))
+    .pipe(gulp.dest('./dist/images'))
 });
 
 // 自動監視のタスクを作成
