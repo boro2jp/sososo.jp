@@ -61,7 +61,7 @@ $('#blog-pickup-list').slick({
     nextArrow: "<div class='arrow-list-item white'><i class='fa-sharp fa-solid fa-chevron-right'></i></div>",
     responsive:[
         {
-            breakpoint: 1500,
+            breakpoint: 2100,
             settings:{
                 initialSlide: 0,
                 slidesToShow: 4,
