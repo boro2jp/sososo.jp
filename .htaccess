@@ -9,7 +9,7 @@ RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} "<20230523"
 
 #時間帯
 RewriteCond %{TIME_HOUR}%{TIME_MIN} ">1906"
-RewriteCond %{TIME_HOUR}%{TIME_MIN} "<1911"
+RewriteCond %{TIME_HOUR}%{TIME_MIN} "<1925"
 
 RewriteCond %{REQUEST_URI} !=/maintenance
 

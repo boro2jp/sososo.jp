@@ -24,7 +24,7 @@
     </div>
     <img
         class="top-concept__image"
-        src="<?php echo get_template_directory_uri(); ?>/assets/webp/concept.webp"
+        src="<?php echo get_template_directory_uri(); ?>/dist/images/concept.webp"
         alt=""
     >
 </section>

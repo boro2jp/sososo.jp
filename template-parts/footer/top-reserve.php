@@ -1,7 +1,7 @@
 <!-- 予約 -->
 <section
         id="reserve"
-        style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/webp/01.webp'); background-size: cover; background-position: center;"
+        style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/01.webp'); background-size: cover; background-position: center;"
         class="top-reserve">
     <div class="inner">
         <div class="section-header center">

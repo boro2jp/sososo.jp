@@ -2,7 +2,7 @@
     <a href="<?php the_permalink();?>">
         <div
             class="blog-pickup-list-item__image"
-            style="background: linear-gradient( 180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url('<?php echo has_post_thumbnail() ? the_post_thumbnail_url() : get_template_directory_uri() . '/assets/webp/default/default.webp' ?>'); background-size: cover; background-position: center"
+            style="background: linear-gradient( 180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url('<?php echo has_post_thumbnail() ? the_post_thumbnail_url() : get_template_directory_uri() . '/dist/images/default/default.webp' ?>'); background-size: cover; background-position: center"
         >
             <div class="blog-pickup-list-item__text">
                 <p class="blog-pickup-list-item__title">

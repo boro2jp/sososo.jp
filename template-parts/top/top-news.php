@@ -12,7 +12,7 @@ $args = [
 ];
 ?>
 <section
-        style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/webp/news.webp'); background-size: cover; background-position: center"
+        style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/news.webp'); background-size: cover; background-position: center"
         class="top-information"
 >
     <div class="top-information--content">

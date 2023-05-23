@@ -42,7 +42,7 @@ $author = get_userdata($post->post_author);
                     <img
                         class="article-content__image"
                         loading="lazy"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/webp/default/default.webp" 
+                        src="<?php echo get_template_directory_uri(); ?>/dist/images/default/default.webp" 
                         alt="<?php the_title(); ?>"
                     >
                 <?php endif; ?>

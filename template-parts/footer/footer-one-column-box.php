@@ -1,6 +1,6 @@
 <section
     class="footer-one-column-box"
-    style="background: linear-gradient( 180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('<?php echo get_template_directory_uri(); ?>/assets/webp/download@2x.webp'); background-size: cover; background-position: center"
+    style="background: linear-gradient( 180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('<?php echo get_template_directory_uri(); ?>/dist/images/download@2x.webp'); background-size: cover; background-position: center"
 >
     <div class="inner">
         <div class="section-header-eg white center small bottom">
@@ -16,14 +16,14 @@
             <a href="https://apps.apple.com/jp/app/apple-store/" target="blank">
                 <img
                     loading="lazy"
-                    src="<?php echo get_template_directory_uri(); ?>/assets/webp/store/apple_store@2x.webp"
+                    src="<?php echo get_template_directory_uri(); ?>/dist/images/store/apple_store@2x.webp"
                     alt=""
                 >
             </a>
             <a href="https://play.google.com/store/apps" target="blank">
                 <img
                     loading="lazy"
-                    src="<?php echo get_template_directory_uri(); ?>/assets/webp/store/google_play@2x.webp"
+                    src="<?php echo get_template_directory_uri(); ?>/dist/images/store/google_play@2x.webp"
                     alt=""
                 >
             </a>

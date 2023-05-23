@@ -1,7 +1,7 @@
 <section class="footer-two-column-box">
     <div
         class="footer-two-column-box__left"
-        style="background: linear-gradient( 180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('<?php echo get_template_directory_uri(); ?>/assets/webp/download@2x.webp'); background-size: cover; background-position: center"
+        style="background: linear-gradient( 180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('<?php echo get_template_directory_uri(); ?>/dist/images/download@2x.webp'); background-size: cover; background-position: center"
     >
         <div class="section-header white center small">
             <h2 class="section-title">

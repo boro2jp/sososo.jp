@@ -1,6 +1,6 @@
 <!-- アクセス -->
 <section
-        style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/webp/access.webp'); background-size: cover;"
+        style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/access.webp'); background-size: cover;"
         class="top-access">
     <div class="top-access--content">
         <div class="inner sp-none">

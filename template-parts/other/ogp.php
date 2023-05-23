@@ -22,7 +22,7 @@ if (is_single()){//単一記事ページの場合
 	} else if ( preg_match( $searchPattern, $str, $imgurl ) && !is_archive()) {//投稿にサムネイルは無いが画像がある場合の処理
 		echo '<meta property="og:image" content="'.$imgurl[2].'">';echo "\n";
 	} else {//投稿にサムネイルも画像も無い場合の処理
-		$ogp_image = get_template_directory_uri().'/assets/webp/og-image.webp';
+		$ogp_image = get_template_directory_uri().'/dist/images/og-image.webp';
 		echo '<meta property="og:image" content="'.$ogp_image.'">';echo "\n";
 	}
 } else {//単一記事ページページ以外の場合（アーカイブページやホームなど）

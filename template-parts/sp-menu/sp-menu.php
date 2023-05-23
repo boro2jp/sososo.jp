@@ -17,7 +17,7 @@ $tags = get_terms('blog_tag', $args);
             <a href="<?php echo home_url(); ?>" class="sp-menu__logo" rel="nofollow">
                 <img 
                     loading="lazy"
-                    src="<?php echo get_template_directory_uri(); ?>/assets/webp/logo/logo-white.webp"
+                    src="<?php echo get_template_directory_uri(); ?>/dist/images/logo/logo-white.webp"
                     alt="<?php echo get_bloginfo('name'); ?>"
                 >  
             </a>

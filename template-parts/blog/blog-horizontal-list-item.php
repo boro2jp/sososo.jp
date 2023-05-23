@@ -20,7 +20,7 @@
             <div class="blog-horizontal-list-item__image">
                 <img
                     loading="lazy"
-                    src="<?php echo get_template_directory_uri(); ?>/assets/webp/default/default.png"
+                    src="<?php echo get_template_directory_uri(); ?>/dist/images/default/default.png"
                     alt="<?php the_title() ?>"
                 >
                 <?php

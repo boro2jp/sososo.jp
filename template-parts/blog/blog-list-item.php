@@ -9,7 +9,7 @@
         <?php else: ?>
         <div
             class="blog-list-item__image"
-            style="background: url('<?php echo get_template_directory_uri(); ?>/assets/webp/default/default.webp'); background-size: cover; background-position: center"
+            style="background: url('<?php echo get_template_directory_uri(); ?>/dist/images/default/default.webp'); background-size: cover; background-position: center"
         >
         </div>
         <?php endif; ?>
