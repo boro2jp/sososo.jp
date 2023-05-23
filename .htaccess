@@ -1,0 +1,18 @@
+#期間限定ここから
+ErrorDocument 503 /extra.html
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+#日付
+RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} ">20230523"
+RewriteCond %{TIME_YEAR}%{TIME_MON}%{TIME_DAY} "<20230523"
+
+#時間帯
+RewriteCond %{TIME_HOUR}%{TIME_MIN} ">1906"
+RewriteCond %{TIME_HOUR}%{TIME_MIN} "<1911"
+
+RewriteCond %{REQUEST_URI} !=/maintenance
+
+RewriteRule ^.*$ - [R=503,L]
+</IfModule>
+#期間限定ここまで
