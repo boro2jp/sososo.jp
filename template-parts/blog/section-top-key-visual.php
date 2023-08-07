@@ -14,7 +14,7 @@ $blog_args = [
     'author' => $args['user_id'] ? $args['user_id'] : null,
     'tax_query' => [
         [
-            'taxonomy' => 'blog_category',
+            'taxonomy' => 'blog_tag',
             'field' => 'slug',
             'terms' => ['pr'],
             'include_children' => true

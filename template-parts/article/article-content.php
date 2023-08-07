@@ -62,7 +62,7 @@ $author = get_userdata($post->post_author);
                         $tags = get_the_terms($post->ID, get_post_type() . '_tag');
                         if($tags){
                             foreach ($tags as $tag) {
-                                echo '<li class="tag-list-item margin"><a href="' . get_tag_link( $tag->term_id ) . '">' . $tag->name . '</a></li>';
+                                echo '<li class="tag-list-item gray margin"><a href="' . get_tag_link( $tag->term_id ) . '">' . $tag->name . '</a></li>';
                                 // echo '<li class="tag-list-item small white-border"><span>' . $category->name . '</span></li>&nbsp;';
                             }
                         }
