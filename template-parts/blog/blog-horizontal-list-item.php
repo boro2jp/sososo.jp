@@ -22,7 +22,7 @@
 		            $categories = get_the_terms($post->ID, 'blog_category');
                     if($categories){
                         foreach ($categories as $category) {
-                            echo '<li class="tag-list-item small"><span>' . $category->name . '</span></li>&nbsp;';
+                            echo '<li class="tag-list-item small primary-border"><span>' . $category->name . '</span></li>&nbsp;';
                         }
                     }
 		            ?>
