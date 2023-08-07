@@ -1,0 +1,14 @@
+.staff-large-list{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    @media #{$TABLET}{
+        flex-direction: row;
+    }
+    @media #{$PC}{
+        flex-direction: row;
+    }
+}

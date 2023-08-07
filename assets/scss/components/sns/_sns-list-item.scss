@@ -1,0 +1,51 @@
+$sns-size: 70px;
+$sns-size-small: 55px;
+
+.sns-list-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 16px 0 0;
+    transition: $transition-slow;
+    background: $color-white;
+    border: 1px solid $color-border-line-black;
+    width: $sns-size-small;
+    height: $sns-size-small;
+    border-radius: $border-radius;
+
+    i{
+        color: $color-black;
+        font-size: 16px;
+        @media #{$TABLET}{
+            font-size: 20px;
+        }
+        @media #{$PC}{
+            font-size: 20px;
+        }
+    }
+
+    &.small{
+        width: $sns-size-small;
+        height: $sns-size-small;
+        @media #{$TABLET}{
+            width: $sns-size-small;
+            height: $sns-size-small;
+        }
+        @media #{$PC}{
+            width: $sns-size-small;
+            height: $sns-size-small;
+        }
+        i{
+            color: $color-black;
+            font-size: 20px;
+        }
+    }
+
+
+    &:hover{
+        background: linear-gradient(103.64deg,rgba($color-primary,1) 5.41%,rgba($color-secondary,1) 68.05%);
+        i{
+            color: $color-white;
+        }
+    }
+}

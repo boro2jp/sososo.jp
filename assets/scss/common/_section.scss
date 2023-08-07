@@ -1,0 +1,65 @@
+.section{
+    // 余白（上側）
+    &.top{
+      @media #{$SP}{
+        padding-top: 60px;
+      }
+      @media #{$TABLET}{
+        padding-top: 60px;
+      }
+      @media #{$PC}{
+        padding-top: 60px;
+      }
+    }
+
+    // 余白（下側）
+    &.bottom{
+      @media #{$SP}{
+        padding-bottom: 60px;
+      }
+      @media #{$TABLET}{
+        padding-bottom: 60px;
+      }
+      @media #{$PC}{
+        padding-bottom: 60px;
+      }
+    }
+
+    // 余白（下側）
+    &.bottom-margin{
+      @media #{$SP}{
+        margin-bottom: 60px;
+      }
+      @media #{$TABLET}{
+        margin-bottom: 60px;
+      }
+      @media #{$PC}{
+        margin-bottom: 60px;
+      }
+    }
+
+        
+    // 背景色
+    &.white{
+      background: $color-white;
+    }
+    &.black{
+      background: $color-black;
+    }
+    &.gray{
+      background: $color-gray-light;
+    }
+
+    // 仕切り線
+    &.border-top{
+        border-top: 1px solid $color-border-line;
+    }
+    
+    &.border-bottom{
+        border-bottom: 1px solid $color-border-line;
+    }   
+
+    &.overflow-hidden{
+      overflow: hidden;
+    }
+}

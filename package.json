@@ -1,0 +1,26 @@
+{
+  "name": "underscores",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "",
+  "scripts": {
+    "start": "gulp"
+  },
+  "dependencies": {
+    "compass": "^0.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-purgecss": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
+    "gulp-webserver": "^0.9.1",
+    "modaal": "^0.4.4",
+    "node-sass": "^7.0.3"
+  }
+}

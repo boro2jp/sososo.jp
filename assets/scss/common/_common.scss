@@ -1,0 +1,51 @@
+html {
+  font-size: $font-size-root;
+}
+
+body{
+  font-size: $font-size-base;
+  font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  background: $color-gray-light;
+}
+
+#body{
+  transition: $transition-slow;
+  opacity: 0;
+  &.loaded{
+    opacity: 1;
+  }
+}
+
+.box{
+  background: $color-white;
+  padding: 60px;
+}
+
+.bar{
+  background-color: $color-error;
+  color: $color-white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.top-navigation{
+  margin-bottom: 20px;
+}
+
+.hidden-sp{
+  @media #{$SP}{
+    display: none;
+  }
+}
+
+.hidden-pc{
+  @media #{$PC}{
+    display: none;
+  }
+}

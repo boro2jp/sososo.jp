@@ -1,0 +1,91 @@
+
+.form-top{
+    font-size: 12px;
+    margin: 20px 0;
+    @media #{$TABLET}{
+        margin: 20px 0;
+    }
+    @media #{$PC}{
+        margin: 20px 0;
+    }
+}
+
+.form-content{
+    margin-bottom: 40px;
+}
+
+.form-bottom{
+
+}
+
+.form-cell{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    border-bottom: 1px solid $color-border-line;
+    padding: 20px 0;
+    @media #{$TABLET}{
+        flex-direction: column;
+    }
+    @media #{$PC}{
+        flex-direction: row;
+    }
+
+    .form-label{
+        width: 300px;
+        @media #{$TABLET}{
+            padding: 12px 0;
+        }
+        @media #{$PC}{
+            padding: 12px 0;
+        }
+
+        label{
+            font-size: 16px;
+            line-height: 1.8;
+            position: relative;
+            @media #{$TABLET}{
+                margin-top: 10px;
+            }
+            @media #{$PC}{
+                margin-top: 10px;
+            }
+            &.required{
+                &:after{
+                    position: absolute;
+                    right: -20px;
+                    top: 0;
+                    line-height: 1;
+                    display: block;
+                    font-size: 16px;
+                    color: red;
+                    content: "＊";
+                }
+            }
+        }
+    }
+
+    .form-input{
+        width: 100%;
+        margin-top: 6px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: row;
+        @media #{$TABLET}{
+            margin-top: 0;
+        }
+        @media #{$PC}{
+            margin-top: 0;
+        }
+
+        .multiple{
+            width: calc((100% / 2) - 5px);
+        }
+    }
+}
+
+.form-btn{
+    margin-top: 40px;
+}

@@ -1,0 +1,63 @@
+body, a, abbr, acronym, address, applet, article, aside, audio,
+b, big, body, caption, canvas, center, cite,
+dd, del, details, dfn, dialog, div, dl, dt, em, embed,
+fieldset, figcaption, figure, form, footer,
+header, hgroup, h1, h2, h3, h4, h5, h6, html,
+i, iframe, img, ins, kbd, label, legend, mark, menu, nav,
+object, output, p, q, ruby,
+s, samp, section, main, small, span, strike, strong, sub, summary, sup,
+tt, table, tbody, textarea, tfoot, thead, time, tr, th, td,
+u, var, video {
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  white-space: normal;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+input{
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+ol, ul{
+  padding-left: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header,
+menu, nav, section, main {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a{
+  cursor: pointer;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}

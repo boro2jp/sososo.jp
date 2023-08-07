@@ -1,0 +1,37 @@
+.top-concept{
+  background: $color-black;
+  &__content{
+    text-align: center;
+  }
+
+  &__title{
+    font-size: 50px;
+    line-height: 1.4;
+    @media #{$SP}{
+      font-size: 30px;
+    }
+    @media #{$TABLET}{
+      font-size: 40px;
+    }
+    @media #{$PC}{
+      font-size: 50px;
+    }
+  }
+
+  &__body{
+    line-height: 2;
+    font-size: 16px;
+  }
+
+  &__image{
+    margin-top: -80px;
+    width: 100%;
+    z-index: 0;
+    @media #{$TABLET}{
+      margin-top: -200px;
+    }
+    @media #{$PC}{
+      margin-top: -220px;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+// ページをサイドバー有りにする（mainとasideを横並びにする）
+.column{
+    display: flex;
+    @media #{$SP}{
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+    @media #{$TABLET}{
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    @media #{$PC}{
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  
+    .column-100{
+      width: 100%;
+    }
+  
+    .column-80{
+      @media #{$SP}{
+        width: 100%;
+      }
+      @media #{$TABLET}{
+        width: calc(80% - 60px);
+      }
+      @media #{$PC}{
+        width: calc(80% - 60px);
+      }
+    }
+
+    .column-70{
+      @media #{$SP}{
+        width: 100%;
+      }
+      @media #{$TABLET}{
+        width: calc(70% - 60px);
+      }
+      @media #{$PC}{
+        width: calc(70% - 60px);
+      }
+    }
+  
+    .column-30{
+      @media #{$SP}{
+        width: 100%;
+      }
+      @media #{$TABLET}{
+        width: 30%;
+      }
+      @media #{$PC}{
+        width: 30%;
+      }
+    }
+  
+    .column-20{
+      @media #{$SP}{
+        width: 100%;
+      }
+      @media #{$TABLET}{
+        width: 20%;
+      }
+      @media #{$PC}{
+        width: 20%;
+      }
+    }
+}

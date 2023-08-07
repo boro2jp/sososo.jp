@@ -1,0 +1,116 @@
+.article-content{
+    background: $color-white;
+    border-radius: $border-radius;
+        
+    @media #{$SP}{
+        padding: 20px;
+    }
+    @media #{$TABLET}{
+        padding: 30px;
+    }
+    @media #{$PC}{
+        padding: 50px;
+    }
+
+    &__image{
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        background: #FAFAFA;
+        border-radius: $border-radius;
+        display: flex;
+        flex-direction: column;
+        @media #{$SP}{
+            align-items: flex-end;
+            justify-content: flex-end;
+            margin-bottom: 30px;
+        }
+        @media #{$TABLET}{
+            align-items: flex-end;
+            justify-content: flex-end;
+            margin-bottom: 30px;
+        }
+        @media #{$PC}{
+            align-items: flex-end;
+            justify-content: flex-end;
+            margin: 20px 0 30px 0;
+        }
+    }
+
+    &__detail{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__detail-top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    &__detail-bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    &__published_at{
+        @include text-date();
+        text-align: center;
+        color: $color-black;
+    }
+
+    &__label{
+        display: block;
+        @include text-date();
+        line-height: 1;
+        color: $color-black;
+        margin-left: 16px;
+    }
+
+    &__title{
+        @include text-title-large();
+        font-weight: bold;
+        text-align: left;
+        color: $color-black;
+    }
+
+    &__inner{
+        @media #{$PC}{
+            width: 60%;
+        }
+    }
+
+    &__content{
+        @include text-body();
+        @media #{$SP}{
+            padding: 20px 0;
+        }
+        @media #{$TABLET}{
+            padding: 30px 0;
+        }
+        @media #{$PC}{
+            padding: 40px 0 50px 0;
+        }
+    }
+
+    &__tag{
+        margin-bottom: 30px;
+    }
+
+    &__share{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}

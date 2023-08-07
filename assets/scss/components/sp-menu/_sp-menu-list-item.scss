@@ -1,0 +1,45 @@
+.sp-menu-list-item{
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+
+  a{
+    @include text-title-small();
+    line-height: 1;
+    padding: 16px 20px;
+    display: inline-block;
+    color: $color-white;
+    width: 100%;
+    transition: $transition-slow;
+    border-radius: $border-radius;
+    border: 1px solid $color-white;
+  }
+
+  &:hover{
+    a{
+      background: $color-white;
+      color: $color-primary;
+    }
+    &::after{
+      right: 22px;
+      color: $color-primary;
+    }
+    
+  }
+
+  &.harf{
+    width: calc((100% / 2) - 5px);
+  }
+
+  &::after{
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translate(0, -50%);
+    font-family: fontAwesome;
+    color: $color-white;
+    content: "\f054";
+    font-size: 11px;
+    transition: $transition-slow;
+  }
+}

@@ -1,0 +1,95 @@
+.share-list-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  flex-direction: column;
+  width: calc((100% / 4) - 10px);
+  transition: $transition-slow;
+  border-radius: $border-radius;
+
+  @media #{$TABLET}{
+    padding: 30px 0;
+  }
+  @media #{$PC}{
+    padding: 30px 0;
+  }
+
+  &__title{
+    @include text-title-small();
+    line-height: 1;
+    display: block;
+    text-align: center;
+    color: $color-white;
+  }
+
+  i{
+    font-size: 24px;
+  }
+
+  &.instagram{
+    background: $color-instagram;
+    color: $color-white;
+    border: 1px solid $color-instagram;
+    position: relative;
+    &:hover{
+      background: transparent;
+      svg, span, .icon{
+        color: $color-facebook;
+      }
+    }
+  }
+
+  &.facebook{
+    background: $color-facebook;
+    color: $color-white;
+    border: 1px solid $color-facebook;
+    position: relative;
+    &:hover{
+      background: transparent;
+      color: $color-facebook;
+      svg, span, .icon{
+        color: $color-facebook;
+      }
+    }
+  }
+
+  &.twitter{
+    background: $color-twitter;
+    color: $color-white;
+    border: 1px solid $color-twitter;
+    &:hover{
+      background: transparent;
+      color: $color-twitter;
+      svg, span, .icon{
+        color: $color-twitter;
+      }
+    }
+  }
+
+  &.pocket{
+    background: $color-pocket;
+    color: $color-white;
+    border: 1px solid $color-pocket;
+    &:hover{
+      background: transparent;
+      color: $color-pocket;
+      svg, span, .icon{
+        color: $color-pocket;
+      }
+    }
+  }
+
+  &.line{
+    background: $color-line;
+    color: $color-white;
+    border: 1px solid $color-line;
+    &:hover{
+      background: transparent;
+      color: $color-line;
+      svg, span, .icon{
+        color: $color-line;
+      }
+    }
+  }
+}

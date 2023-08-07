@@ -1,0 +1,217 @@
+.tag-list-item{
+  a,span{
+    line-height: 1;
+    background: transparent;
+    color: $color-black;
+    padding: 14px 20px;
+    display: inline-block;
+    transition: $transition-slow;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 6px;
+
+    @media #{$TABLET}{
+      padding: 16px 26px;
+      font-size: 1.4rem;
+    }
+    @media #{$PC}{
+      padding: 16px 26px;
+      font-size: 1.4rem;
+    }
+  }
+
+  a{
+    &:hover{
+      background: $color-white;
+      color: $color-black;
+    }
+  }
+
+  &.block{
+    @media #{$PC}{
+      width: 100%;
+      a,span{
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+
+  &.small{
+    a,span{
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 1.1rem;
+    }
+  }
+
+  &.medium{
+    a,span{
+      padding: 10px 16px;
+      font-size: 1.1rem;
+    }
+  }
+
+  &.margin{
+    margin: 6px 10px 6px 0;
+  }
+
+  &.primary{
+    a,span{
+      background: $color-primary;
+      color: $color-white;
+      border: 1px solid $color-primary;
+    }
+    a{
+      &:hover{
+        cursor: pointer;
+        color: $color-primary;
+        background: $color-white;
+      }
+    }
+  }
+
+  &.primary-light{
+    a,span{
+      background: rgba($color-primary, 0.1);
+      color: $color-primary;
+      border: rgba($color-primary, 0.1);
+    }
+    a{
+      &:hover{
+        cursor: pointer;
+        color: $color-primary;
+        background: $color-white;
+      }
+    }
+  }
+
+  &.secondary{
+    a,span{
+      background: $color-secondary;
+      color: $color-white;
+      border: 1px solid $color-primary;
+    }
+    a{
+      &:hover{
+        cursor: pointer;
+        color: $color-primary;
+        background: $color-white;
+      }
+    }
+  }
+
+  &.primary-border{
+    a,span{
+      border: 1px solid $color-primary;
+      background: $color-white;
+      color: $color-primary;
+    }
+    a{
+      &:hover{
+        cursor: pointer;
+        background: $color-primary;
+        color: $color-white;
+      }
+    }
+  }
+
+  &.black{
+    a,span{
+      background: $color-black;
+      color: $color-white;
+      border: 1px solid $color-black;
+    }
+    a{
+      &:hover{
+        cursor: pointer;
+        background: transparent;
+        color: $color-black;
+      }
+    }
+  }
+
+  &.black-border{
+    a,span{
+      border: 1px solid $color-black;
+      background: transparent;
+      color: $color-black;
+    }
+
+    a{
+      &:hover{
+        cursor: pointer;
+        background: $color-black;
+        color: $color-white;
+      }
+    }
+  }
+
+  &.white{
+    a,span{
+      border: 2px solid $color-border-line;
+      background: $color-white;
+      color: $color-black;
+    }
+
+    a{
+      &:hover{
+        cursor: pointer;
+        color: $color-white;
+        background: $color-primary;
+      }
+    }
+  }
+
+  &.white-border{
+    a,span{
+      border: 1px solid $color-white;
+      background: transparent;
+      color: $color-white;
+    }
+
+    a{
+      &:hover{
+        cursor: pointer;
+        background: $color-white;
+        color: $color-black;
+      }
+    }
+  }
+
+
+  &.gray{
+    a,span{
+      background: $color-gray-light;
+      color: $color-black;
+    }
+  }
+
+  &.black{
+    a,span{
+      background: $color-black;
+      color: $color-white;
+    }
+  }
+
+
+  &.error{
+    a,span{
+      color: $color-white;
+      background: $color-error;
+    }
+  }
+
+
+  &.harf{
+    @media #{$SP}{
+      width: calc((100% / 2) - 10px);
+
+      a{
+        width: 100%;
+        text-align: center;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.top-photo{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: rgba($color-black, 1);
+  &--content{
+    padding: 50px 0 0 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,22 @@
+
+.text-btn{
+  color: $color-black;
+  text-align: right;
+  text-decoration: underline;
+  position: relative;
+  padding-right: 40px;
+  font-family: $font-primary;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: bold;
+
+  &:hover{
+    &::after{
+      right: -4px;
+    }
+  }
+
+  &::after{
+    @include icon-circle();
+  }
+}

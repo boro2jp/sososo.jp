@@ -1,0 +1,80 @@
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel],
+textarea {
+    font-size: 16px;
+    padding: 16px 20px;
+    border: 0px solid $color-border-line;
+    background: $color-white;
+    color: $color-black;
+    width: 100%;
+    outline: none;
+    border-radius: $border-radius;
+    font-weight: normal;
+    @media #{$TABLET}{
+        padding: 14px 20px;
+    }
+    @media #{$PC}{
+        padding: 14px 20px;
+    }
+
+    &.isDark{
+        background: $color-black;
+        color:  $color-black;
+        border: 1px solid $color-black;
+    }
+    &.isRadius{
+        border-radius: 100px;
+        padding: 10px 20px;
+    }
+    &.isSearchBox{
+        width: 300px;
+    }
+
+    &:focus{
+        box-shadow: 0 0 3px 0 rgba($color-primary, 1);
+        outline: 0;
+    }
+
+    &.disable{
+        pointer-events : none;
+        color: $color-gray;
+    }
+
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel]{
+    height: 56px;
+    @media #{$TABLET}{
+        height: 56px;
+    }
+    @media #{$PC}{
+        height: 56px;
+    }
+    &.large{
+        height: 60px;
+        font-size: 20px;
+        padding: 12px 24px;
+    }
+}
+
+input[type=submit],
+button{
+    cursor: pointer;
+    &.large{
+        font-size: 20px;
+    }
+
+    &.accent{
+        background: $color-primary;
+        color: $color-black;
+        &:hover{
+            background: rgba($color-primary, 0.8);
+        }
+    }
+}
+

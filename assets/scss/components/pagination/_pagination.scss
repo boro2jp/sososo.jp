@@ -1,0 +1,84 @@
+$pagination-height: 50px;
+
+.pagination{
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.nav-links{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.page-numbers{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include text-title-small();
+  color: $color-black;
+  margin: 4px 8px 4px 0;
+  background: $color-white;
+  height: $pagination-height;
+  padding: 0 16px;
+  transition: $transition-fast;
+  @media #{$TABLET}{
+    padding: 0 20px;
+  }
+  @media #{$PC}{
+    padding: 0 20px;
+
+    &:hover{
+      background: $color-primary;
+      color: $color-white;
+    }
+  }
+
+  a{
+    color: $color-black;
+  }
+
+  &.current{
+    background: $color-primary;
+    cursor: not-allowed;
+    color: $color-white;
+  }
+}
+
+.prev,
+.next{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include text-title-small();
+  color: $color-black;
+  margin: 4px 8px 4px 0;
+  background: $color-white;
+  padding: 0 40px;
+  transition: $transition-fast;
+  height: $pagination-height;
+  @media #{$TABLET}{
+    padding: 0 40px;
+  }
+  @media #{$PC}{
+    padding: 0 40px;
+  }
+  &:hover{
+    background: $color-primary;
+    color: $color-white;
+  }
+
+  a{
+    color: $color-black;
+  }
+}

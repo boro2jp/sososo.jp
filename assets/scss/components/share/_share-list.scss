@@ -1,0 +1,13 @@
+.share-list{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media #{$TABLET}{
+    justify-content: space-between;
+  }
+  @media #{$PC}{
+    justify-content: space-between;
+  }
+}

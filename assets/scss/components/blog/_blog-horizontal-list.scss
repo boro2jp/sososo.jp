@@ -1,0 +1,12 @@
+.blog-horizontal-list{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &:after{
+        content: "";
+        width: calc((100% / 3) - 12px);
+    }
+}

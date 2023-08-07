@@ -1,0 +1,19 @@
+.sp-menu-section-list{
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin-top: 40px;
+
+  &:first-child{
+    padding-top: 0;
+  }
+
+  &__title{
+    @include text-title();
+    color: $color-white;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}

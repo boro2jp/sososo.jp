@@ -1,0 +1,175 @@
+.section-top-key-visual{
+  width: 100%;
+  z-index: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  overflow: hidden;
+  background-color: $color-primary;
+  height: auto;
+  background: linear-gradient(103.64deg,rgba($color-secondary,.8) 5.41%,rgba($color-primary,0.8) 68.05%), url('../../dist/images/background/bg.webp');
+  background-position: center;
+  background-size: cover;
+  @media #{$SP}{
+    padding: $height-header 0 40px 0;
+  }
+  @media #{$TABLET}{
+    padding: $height-header 0 40px 0;
+  }
+  @media #{$PC}{
+    padding: calc(10px + #{$height-header}) 0 40px 0;
+    min-height: 500px;
+  }
+  &__logo{
+    width: 80%;
+    height: auto;
+    opacity: 1;
+  }
+
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__text{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    @media #{$TABLET}{
+      width: 100%;
+    }
+    @media #{$PC}{
+      width: 100%;
+    }
+  }
+
+  &__title{
+    color: $color-white;
+    font-size: 40px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    @media #{$TABLET}{
+      font-size: 34px;
+    }
+    @media #{$PC}{
+      font-size: 45px;
+    }
+  }
+
+  &__body{
+    color: $color-white;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+    @media #{$TABLET}{
+      font-size: 16px;
+    }
+    @media #{$PC}{
+      font-size: 16px;
+    }
+  }
+
+  &__slider-wrapper{
+    width: 100%;
+    @media #{$TABLET}{
+      width: 100%;
+    }
+    @media #{$PC}{
+      width: 100%;
+    }
+  }
+
+  &__slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 160vw;
+    overflow: hidden;
+    @media #{$TABLET}{
+      width: 100vw;
+    }
+    @media #{$PC}{
+      width: 100VW;
+    }
+  }
+
+  &__inner{
+    overflow-x: inherit;
+  }
+
+  &__image-list{
+    width: 100%;
+  }
+
+  &__image-list-item{
+    padding: 0 20px;
+    border-radius: $border-radius;
+    overflow: hidden;
+    img{
+      width: 100%;
+      border-radius: $border-radius;
+    }
+
+    @media #{$TABLET}{
+      width: 600px;
+    }
+    @media #{$PC}{
+      width: 800px;
+    }
+  }
+
+  &__bottom{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__navigation-child{
+    font-size: 20px;
+  }
+
+  &__navigation-slash{
+    font-size: 20px;
+  }
+
+  &__navigation-parent{
+    font-size: 20px;
+  }
+
+  &__arrow{
+    color: $color-primary;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  &__arrow-list-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background: $color-white;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: $border-radius;
+  }
+}

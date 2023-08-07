@@ -1,0 +1,8 @@
+/** 管理バー (半透明 → hover で半透明解除) */
+#wpadminbar {
+    opacity: 0.5;
+    transition: 0.2s opacity;
+}
+#wpadminbar:hover {
+    opacity: 1;
+}

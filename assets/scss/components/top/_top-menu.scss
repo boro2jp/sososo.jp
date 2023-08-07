@@ -1,0 +1,14 @@
+.top-menu{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  &--content{
+    padding: 50px;
+    width: 100%;
+    background: rgba($color-black, .8);
+    @media #{$TABLET-OVER}{
+      padding: 100px;
+      width: 50%;
+    }
+  }
+}

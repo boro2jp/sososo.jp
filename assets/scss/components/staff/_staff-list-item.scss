@@ -1,0 +1,113 @@
+.staff-list-item {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background: $color-white;
+    border-radius: $border-radius;
+    padding: 30px;
+    @media #{$TABLET}{
+        flex-direction: row;
+    }
+    @media #{$PC}{
+        flex-direction: row;
+    }
+
+    &.black{
+        .staff-list-item__title,
+        .staff-list-item__created-at{
+            color: $color-black !important;
+        }
+    }
+
+    &__image{
+
+        overflow: hidden;
+        background: #FAFAFA;
+        border-radius: $border-radius;
+        position: relative;
+        width: 120px;
+        height: 120px;
+        &:after{
+            content: "";
+            display: block;
+            width: calc(100% - 12px);
+            height: calc(100% - 12px);
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 6px solid $color-primary;
+            opacity: 0;
+            transition: $transition-slow;
+        }
+        @media #{$TABLET}{
+            width: 240px;
+            height: 240px;
+        }
+        @media #{$PC}{
+            width: 240px;
+            height: 240px;
+        }
+    }
+
+    &__detail{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        @media #{$SP}{
+            margin-top: 16px;
+        }
+        @media #{$TABLET}{
+            width: calc(100% - 240px);
+            padding-left: 30px;
+        }
+        @media #{$PC}{
+            width: calc(100% - 240px);
+            padding-left: 30px;
+        }
+    }
+
+    &__text{
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+    }
+
+    &__title{
+        transition: $transition-slow;
+        color: $color-black;
+        display: block;
+        @include text-title();
+    }
+
+    &__description{
+        @include text-body-small();
+        margin-top: 6px;
+        transition: $transition-slow;
+        color: $color-black;
+    }
+
+    &__link-list{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    &__link-list-item{
+        margin-right: 12px;
+
+        a{
+            font-size: 18px;
+            color: $color-black;
+        }
+    }
+
+    &__btn{
+        margin-top: 20px;
+    }
+}

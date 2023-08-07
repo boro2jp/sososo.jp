@@ -1,0 +1,47 @@
+.breadcrumbs{
+    padding: 16px 0;
+    background-color: $color-white;
+
+    .breadcrumbs-list{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 12px;
+        color: $color-black;
+
+        // リンク無しの場合
+        li{
+            margin-right: 26px;
+            font-size: 12px;
+            color: $color-gray;
+            font-weight: bold;
+        }
+
+        // リンク有りの場合
+        a{
+            display: inline-block;
+            font-size: 12px;
+            color: $color-black;
+            position: relative;
+            font-weight: bold;
+
+            &::before{
+                content: "";
+                display: inline;
+                position: absolute;
+                top: 0.53em;
+                right: -15px;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                display: block;
+                width: 5px;
+                height: 5px;
+                border-style: solid;
+                border-width: 1px 1px 0 0;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                border-color: $color-gray;
+            }
+        }
+    }
+}

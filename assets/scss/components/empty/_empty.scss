@@ -1,0 +1,25 @@
+.empty {
+  width: 100%;
+  background: $color-white;
+  text-align: left;
+  padding: 60px 20px;
+  @media #{$TABLET_OVER}{
+    padding: 60px;
+  }
+
+  .title{
+    @include text-title-large();
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .body{
+    @include text_body();
+    margin-top: 10px;
+    text-align: left;
+    @media #{$TABLET_OVER}{
+      width: 80%;
+      margin-top: 10px
+    }
+  }
+}

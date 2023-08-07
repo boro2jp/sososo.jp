@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/*!
+Theme Name: sososo.jp
+Version: 0.0
+*/
+
+// ■□■□■□■□■□■□■□■□■□
+// reset
+// ■□■□■□■□■□■□■□■□■□
+@import 'reset/reset';
+
+// ■□■□■□■□■□■□■□■□■□
+// variable
+// ■□■□■□■□■□■□■□■□■□
+@import 'variable/color';
+@import 'variable/media-query';
+@import 'variable/font';
+@import 'variable/size';
+@import 'variable/shadow';
+@import 'variable/transition';
+@import 'variable/zindex';
+
+// ■□■□■□■□■□■□■□■□■□
+// common
+// ■□■□■□■□■□■□■□■□■□
+@import 'common/common';
+@import 'common/column';
+@import 'common/header-padding';
+@import 'common/inner';
+@import 'common/main';
+@import 'common/page';
+@import 'common/section';
+
+// ■□■□■□■□■□■□■□■□■□
+// mixin
+// ■□■□■□■□■□■□■□■□■□
+// text
+@import 'mixin/text/text-style';
+@import 'mixin/icon/icon-circle';
+
+// ■□■□■□■□■□■□■□■□■□
+// components
+// ■□■□■□■□■□■□■□■□■□
+// article
+@import 'admin/_bar';
+
+// article
+@import 'components/article/article-content';
+
+// blog
+@import 'components/blog/related-articles';
+@import 'components/blog/blog-horizontal-list';
+@import 'components/blog/blog-horizontal-list-item';
+@import 'components/blog/blog-list';
+@import 'components/blog/blog-list-item';
+@import 'components/blog/blog-list-harf';
+@import 'components/blog/blog-list-item-harf';
+@import 'components/blog/blog-small-list';
+@import 'components/blog/blog-small-list-item';
+@import 'components/blog/blog-pickup-list-item';
+@import 'components/blog/blog-pickup-list';
+@import 'components/blog/blog-content';
+@import 'components/blog/section-top-category-blog';
+
+// breadcrumbs
+@import 'components/breadcrumbs/breadcrumbs';
+
+// btn
+@import 'components/btn/btn';
+@import 'components/btn/text-btn';
+
+// category
+@import 'components/category/category-list';
+@import 'components/category/category-list-item';
+@import 'components/category/category-menu-list';
+@import 'components/category/category-menu-list-item';
+@import 'components/category/category-box-list';
+@import 'components/category/category-box-list-item';
+
+// content
+@import 'components/content/content-list';
+@import 'components/content/content-list-item';
+
+// demo
+@import 'components/demo/demo';
+
+// empty
+@import 'components/empty/empty';
+
+// footer
+@import 'components/footer/footer';
+@import 'components/footer/footer-one-column-box';
+@import 'components/footer/footer-two-column-box';
+
+// form
+@import 'components/form/form';
+@import 'components/form/checkbox';
+@import 'components/form/other';
+@import 'components/form/label';
+@import 'components/form/placeholder';
+@import 'components/form/radio';
+@import 'components/form/searchform';
+@import 'components/form/table';
+@import 'components/form/searchform';
+
+// go-top
+@import 'components/go-top/go-top';
+
+// header
+@import 'components/header/header';
+
+// key-visual
+@import 'components/key-visual/page-key-visual';
+@import 'components/key-visual/section-top-key-visual';
+
+// label
+@import 'components/label/label';
+
+// loading
+@import 'components/loading/loading';
+
+// markdown
+@import 'components/markdown/markdown';
+@import 'components/markdown/show';
+
+// menu
+// @import 'components/menu/menu-list';
+// @import 'components/menu/menu-list-item';
+// @import 'components/menu/menu-category-list';
+// @import 'components/menu/menu-category-list-item';
+// @import 'components/menu/menu-show';
+
+// news
+@import 'components/news/news-list';
+@import 'components/news/news-list-item';
+
+// pagination
+@import 'components/pagination/pagination';
+
+// photo
+@import 'components/photo/photo-list';
+@import 'components/photo/photo-list-item';
+
+// policy
+@import 'components/policy/policy';
+
+// recruit
+@import 'components/recruit/recruit-list';
+@import 'components/recruit/recruit-list-item';
+
+// section-header
+@import 'components/section-header/section-header';
+@import 'components/section-header/section-header-eg';
+
+// share
+@import 'components/share/share-list';
+@import 'components/share/share-list-item';
+
+// sidebar
+@import 'components/sidebar/sidebar-list';
+@import 'components/sidebar/sidebar-list-item';
+
+// sns
+@import 'components/sns/sns-list';
+@import 'components/sns/sns-list-item';
+
+// sp-menu
+@import 'components/sp-menu/sp-menu';
+@import 'components/sp-menu/sp-menu-section-list';
+@import 'components/sp-menu/sp-menu-section-list-item';
+@import 'components/sp-menu/sp-menu-list';
+@import 'components/sp-menu/sp-menu-list-item';
+
+// staff
+@import 'components/staff/staff-list';
+@import 'components/staff/staff-list-item';
+@import 'components/staff/staff-large-list';
+@import 'components/staff/staff-large-list-item';
+
+// table
+@import 'components/table/table';
+
+// tag
+@import 'components/tag/tag-list';
+@import 'components/tag/tag-list-item';
+
+// top
+// @import 'components/top/top-menu-pick-up';
+// @import 'components/top/top-access';
+// @import 'components/top/top-reserve';
+// @import 'components/top/top-key-visual';
+// @import 'components/top/top-concept';
+// @import 'components/top/top-menu';
+// @import 'components/top/top-photo';
+// @import 'components/top/top-news';
+// @import 'components/top/top-navigation';
+// @import 'components/top/top-key-visual';
+
+
+// ■□■□■□■□■□■□■□■□■□
+// library
+// ■□■□■□■□■□■□■□■□■□
+@import 'library/slick';
+@import 'library/slick-theme';
+
+// ■□■□■□■□■□■□■□■□■□
+// wp-plugin
+// ■□■□■□■□■□■□■□■□■□
+@import 'wp-plugin/contact_form7';
+@import 'wp-plugin/mw-wp-form';
+

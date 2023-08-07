@@ -1,0 +1,58 @@
+.loading{
+  height: 100vh;
+  width: 100%;
+  background: $color-black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  transition: 0.5s all;
+
+  &__logo{
+    width: 200px;
+    height: auto;
+  }
+
+  &.active{
+    transform: translate(0, -100%);
+  }
+}
+
+.sample{
+  height: 100vh;
+  width: 100%;
+  background: $color-black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  clip-path: url("#svg");
+}
+
+.sample2{
+  color: $color-white;
+  font-size: 100px;
+}
+
+
+@keyframes loading {
+  0% {
+    clip-path: inset(0px 0px 0px 0px);
+  }
+  100% {
+    clip-path: inset(200px 200px 200px 200px);
+  }
+}
+
+@keyframes animation-sample{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}

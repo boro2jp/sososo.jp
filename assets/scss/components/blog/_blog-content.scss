@@ -1,0 +1,11 @@
+.blog-content{
+  background: $color-white;
+  padding: 20px;
+  @media #{$TABLET}{
+    padding: 40px;
+  }
+
+  @media #{$PC}{
+    padding: 60px;
+  }
+}

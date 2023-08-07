@@ -1,0 +1,10 @@
+.menu-category-list{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+
+  &:first-child{
+    padding-top: 0;
+  }
+}

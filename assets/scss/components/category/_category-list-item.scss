@@ -1,0 +1,39 @@
+.category-list-item{
+  a,span{
+    @include text-date();
+    line-height: 1;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 10px;
+    transition: $transition-slow;
+  }
+
+  &.hover{
+    &:hover{
+      a,span{
+        color: $color-white;
+        background: $color-primary;
+      }
+    }
+  }
+
+  &.small{
+    a,span{
+      padding: 4px 12px;
+    }
+  }
+
+  &.margin{
+    margin: 6px 10px 6px 0;
+  }
+
+  &.primary{
+    a,span{
+      background: $color-primary;
+      color: $color-white;
+      border: 1px solid $color-primary;
+    }
+  }
+}
