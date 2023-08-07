@@ -60,9 +60,11 @@ $author = get_userdata($post->post_author);
                 <ul class="tag-list">
                     <?php
                         $tags = get_the_terms($post->ID, get_post_type() . '_tag');
-                        foreach ($tags as $tag) {
-                            echo '<li class="tag-list-item margin"><a href="' . get_tag_link( $tag->term_id ) . '">' . $tag->name . '</a></li>';
-                            // echo '<li class="tag-list-item small white-border"><span>' . $category->name . '</span></li>&nbsp;';
+                        if($tags){
+                            foreach ($tags as $tag) {
+                                echo '<li class="tag-list-item margin"><a href="' . get_tag_link( $tag->term_id ) . '">' . $tag->name . '</a></li>';
+                                // echo '<li class="tag-list-item small white-border"><span>' . $category->name . '</span></li>&nbsp;';
+                            }
                         }
                     ?>
                 </ul>
